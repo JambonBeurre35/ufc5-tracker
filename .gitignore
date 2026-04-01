@@ -1,0 +1,17 @@
+# Compiled source #
+*.o
+*.pyc
+*.class
+*.exe
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node modules
+node_modules/
