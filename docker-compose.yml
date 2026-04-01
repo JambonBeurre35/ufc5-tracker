@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  app:
+    image: your-image-name
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+    environment:
+      NODE_ENV: development
+      API_URL: http://your-api-url
+
+  db:
+    image: postgres:latest
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: youruser
+      POSTGRES_PASSWORD: yourpassword
+      POSTGRES_DB: yourdbname
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:
+    driver: local
