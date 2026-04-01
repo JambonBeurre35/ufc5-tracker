@@ -1,0 +1,1 @@
+{\n  "name": "ufc5-tracker",\n  "version": "1.0.0",\n  "description": "Backend for UFC 5 Tracker",\n  "main": "index.js",\n  "scripts": {\n    "start": "node index.js",\n    "build": "tsc"\n  },\n  "dependencies": {\n    "express": "^4.17.1",\n    "sqlite3": "^5.0.0"\n  },\n  "devDependencies": {\n    "typescript": "^4.5.0"\n  }\n}
